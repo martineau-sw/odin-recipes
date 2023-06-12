@@ -1,3 +1,87 @@
-* {
+body {
     font-family: 'Helvetica', sans-serif;
+    line-height: 1.18;
+    background-color: #a65757
 }
+
+body.recipe {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+div.recipe-color {
+    background-color: burlywood;
+    border: 10px outset #F9E0D8;
+    border-radius: 10px;
+    padding: 0px 20px 5px 20px;
+    box-shadow: 5px 5px 10px #472222;
+}
+
+h1.home {
+    text-align: center;
+    font-size: 10vw;
+}
+
+.recipe-header h1 {
+    text-align: center;
+    font-size: 8vw;
+    color: #F9E0D8;
+    margin: 0% 0% 0% 0%;
+}
+
+.recipe-header img {
+    width: 100%;
+    height: auto;    
+}
+
+.navigation {
+    text-align: center;
+}
+
+.navigation a {
+    font-weight: bold;
+    font-size: 5vw;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.5vw;
+    color: #F9E0D8;
+    text-align: center;
+}
+
+ol,
+ul, 
+p {
+    background-color: #A66B57;
+    border: 5px inset #A66B57;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 2px #472222;
+    padding: 25px 25px 10px 25px;
+}
+
+ol {
+    padding: 25px 25px 10px 40px;
+}
+
+ol li {
+    padding-left: 10px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+li, p 
+{
+    font-size: 1vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #431a1a;
+}
+
+
+
