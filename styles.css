@@ -4,75 +4,109 @@ body {
     background-color: #a65757
 }
 
-body.recipe {
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-div.recipe-color {
-    background-color: burlywood;
-    border: 10px outset #F9E0D8;
-    border-radius: 10px;
-    padding: 0px 20px 5px 20px;
-    box-shadow: 5px 5px 10px #472222;
-}
-
-h1.home {
-    text-align: center;
-    font-size: 10vw;
+h1  {
+    margin: 10px 25% -20px 25%;
+    text-transform: uppercase;
+    font-size: 5vw;
+    color: #472222;
+    display: block;
 }
 
 .recipe-header h1 {
-    text-align: center;
-    font-size: 8vw;
-    color: #F9E0D8;
-    margin: 0% 0% 0% 0%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .recipe-header img {
-    width: 100%;
-    height: auto;    
+    width: 100%
 }
 
-.navigation {
+div.navigation {
+    margin: 10% auto;
+}
+
+div.navigation ul {
     text-align: center;
 }
 
-.navigation a {
+div.navigation ul li {
+    display: inline-block;
+    margin: 0 40px 
+}
+
+div.navigation a {
     font-weight: bold;
     font-size: 5vw;
-    background-color: black;
-    color: white;
+    color: #472222;
     text-decoration: none;
 }
 
 h2 {
-    font-size: 1.5vw;
-    color: #F9E0D8;
-    text-align: center;
+    font-size: 4vw;
+    color: #472222;
+    
+    text-transform: uppercase;
+    margin: 30px 25% -20px 25%
 }
 
-ol,
-ul, 
-p {
+.carve {
     background-color: #A66B57;
     border: 5px inset #A66B57;
     border-radius: 10px;
     box-shadow: inset 5px 5px 2px #472222;
     padding: 25px 25px 10px 25px;
+    margin: 20px 25%
 }
 
-ol {
+.carve.kimchi {
+    height: 30vw;
+    padding: 0px;
+    background-color: #d4bf87;
+    background-image: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4436654.jpg&q=60&c=sc&orient=true&poi=auto&h=512");
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position-y: center;
+    background-blend-mode: multiply;
+    box-shadow: inset 5px 5px 2px #472222;
+}
+
+.carve.tteokbokki {
+    padding: 0px;
+    height: 30vw;
+    background-color: #d4bf87;
+    background-image: url("https://www.allrecipes.com/thmb/7emNJhHESvvVJ3RA4hZe2pOu91I=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/8001954-2c9fe28de46d4f27a7e02ab4044c1951.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position-y: center;
+    background-blend-mode: multiply;
+    box-shadow: inset 5px 5px 2px #472222;
+}
+
+.carve.japchae {
+    height: 30vw;
+    padding: 0px;
+    background-color: #d4bf87;
+    background-image: url("https://www.allrecipes.com/thmb/n1VzOV2_tmJskA8MnryS99sK3Uw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/4468800-3f578da6107c4a2cb89e16d1b5114bca.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position-y: center;
+    background-blend-mode: multiply;
+    box-shadow: inset 5px 5px 2px #472222;
+}
+
+
+ol.carve {
     padding: 25px 25px 10px 40px;
 }
 
-ol li {
+ol.carve li {
     padding-left: 10px;
 }
 
 ul li {
     list-style-type: none;
 }
+
 
 li, p 
 {
