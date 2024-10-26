@@ -3,42 +3,63 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
-    <title>Odin Recipes</title>
+    <title>economical dinners</title>
     <style>
       body {
         display: border-box;
         width: 50%;
         height: 100vh;
+        padding: 1vh 0;
         overflow: hidden;
+        background-color: transparent;
+        background-image: linear-gradient(210deg, darkslategrey 20% 10%, black 80% 10%);
+        mix-blend-mode: difference;
+        box-shadow: none;
+        filter: none;
+      }
+
+      h1 {
+        color: white;
+        filter: none;
+        text-shadow: 0px 0px 5px black;
       }
 
       ul {
         padding: 0;
         border-radius: 0px 25px 25px 25px;
+        background-image: linear-gradient(30deg, rgba(255, 255, 255, 0.478), rgba(0, 128, 128, 0.514));
+        box-shadow: none;
+        background-color: transparent;
       }
 
       a {
         display: block;
-        color: salmon;
+        color: black;
         line-height: 100%;
         padding: 1vh 5vw;
         z-index: -1;
         text-align: left;
         border-radius: 0px 25px 25px 25px;
+        filter: none;
+      }
+
+      li:hover {
+        filter: drop-shadow(0 2px 5px black) drop-shadow(0 -1px 1px white);
       }
 
       a:hover {
         color: lightyellow;
-        background-color: maroon;
+        filter: drop-shadow(0 2px 5px black) drop-shadow(0 -1px 1px white);
       }
     </style>
   </head>
-  <body class="background-0">
-    <h1>Odin Recipes</h1>
-    <ul class="background-1">
+  <body>
+    <h1>dinner, in this economy</h1>
+    <ul>
       <li><a href="./recipes/ramen.html" target="_blank" rel="noreferrer">Maruchan® Ramen Noodle Soup - Chicken Flavor</a></li>
       <li><a href="./recipes/pops.html" target="_blank" rel="noreferrer">Kellogg's® Corn Pops® Cereal</a></li>
       <li><a href="./recipes/hot_pocket.html" target="_blank" rel="noreferrer">Nestle® Hot Pockets® - Premium Pepporoni Pizza</a></li>
+      <li><a href="">sleep</a></li>
     </ul>
     
   </body>
