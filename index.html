@@ -11,15 +11,28 @@
       }
 
       a {
-        text-align: center;
+        display: block;
+        color: salmon;
+        line-height: 100%;
+        padding: 2%;
+        background-image: none;
+        z-index: -1;
+        text-align: left;
+      }
+
+      a:hover {
+        color: lightyellow;
+        background-color: maroon;
       }
     </style>
   </head>
   <body style="background-color: maroon; background-image: none;">
-    <h1 style="text-align: center";>Odin Recipes</h1>
-      <a href="./recipes/ramen.html" target="_blank" rel="noreferrer">Maruchan® Ramen Noodle Soup - Chicken Flavor</a>
-      <a href="./recipes/pops.html" target="_blank" rel="noreferrer">Kellogg's® Corn Pops® Cereal</a>
-      <a href="./recipes/hot_pocket.html" target="_blank" rel="noreferrer">Nestle® Hot Pockets® - Premium Pepporoni Pizza</a>
+    <h1>Odin Recipes</h1>
+    <ul>
+      <li><a href="./recipes/ramen.html" target="_blank" rel="noreferrer">Maruchan® Ramen Noodle Soup - Chicken Flavor</a></li>
+      <li><a href="./recipes/pops.html" target="_blank" rel="noreferrer">Kellogg's® Corn Pops® Cereal</a></li>
+      <li><a href="./recipes/hot_pocket.html" target="_blank" rel="noreferrer">Nestle® Hot Pockets® - Premium Pepporoni Pizza</a></li>
+    </ul>
     
   </body>
 </html>

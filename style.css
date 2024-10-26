@@ -95,16 +95,5 @@ p {
 
 a {
   text-decoration: none;
-  display: block;
-  font-size: 250%;
-  line-height: 150%;
-  box-shadow: none;
-  padding: 2%;
-  margin: 5%;
-  background-color:  rgba(181, 80, 80, 0.612);
-  background-image: none;
-  z-index: -1;
-  text-align: left;
-  border-radius: 25px;
 }
 
