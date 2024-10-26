@@ -15,9 +15,12 @@
   text-transform: lowercase;
 }
 
+@keyframes zoom {
+  from {width: 125%; margin: -12.5%}
+  to {width: 100%; margin: 0%}
+}
+
 body {
-  background-image: linear-gradient(210deg, brown, maroon);
-  background-color: maroon;
   width: 50%;
   margin: 10% auto;
   text-align: left;
@@ -25,13 +28,32 @@ body {
   z-index: -10;
 }
 
+.background-0 {
+  background-image: linear-gradient(210deg, brown, maroon);
+}
+
+.background-1 {
+  background-image: linear-gradient(210deg, indianred, maroon);
+  background-attachment: fixed, local;
+}
+
 h1,
 h2 {
-  font-size: 400%;
-  color: lightyellow;
+  font-size: 6vh;
   text-align: left;
   margin: 10% 0% -1.4%;
-  text-shadow: 0px 2px 5px maroon;
+}
+
+h1, 
+h2,
+h3,
+h4,
+strong {
+  filter: drop-shadow(0 2px 2px maroon);
+  background-image: linear-gradient(salmon 0% 1%, lightyellow 15% 90%, lightyellow 50% 90%, cadetblue 100% 5%);
+  background-clip: text;
+  background-attachment: fixed;
+  color: transparent;
 }
 
 small {
@@ -41,31 +63,48 @@ small {
 p,
 ul, 
 ol{
-  background-image: linear-gradient(90deg, rgba(181, 80, 80, 0.612), rgba(181, 80, 80, 0.276));
-  margin: 0% auto 0% auto;
+  padding: 5px;
+  margin: 0%;
   z-index: -5;
-  padding: 5% 10%;
+  border-radius: 0px 25px 25px 25px;
   box-shadow: inset 0px 2px 5px maroon;
 }
 
 p,
 li {
-  color: salmon;
-  text-shadow: 0px -1px 0px maroon;
-  line-height: 150%;
+  transition-property: filter, background-color, color;
+  transition-duration: 250ms;
+  filter: drop-shadow(0 0.1vh 0.1vh maroon);
+  background-image: linear-gradient(brown 0% 1%, salmon 15% 90%, salmon 50% 90%, maroon 100% 5%);
+  background-clip: text;
+  background-attachment: fixed;
+  color: transparent; 
+  padding: 1vh 5vw;
+  border-radius: 0px 25px 25px 25px;
 }
+
 
 p:hover,
 li:hover {
-  color: lightyellow;
+  filter: drop-shadow(0 -1px 0px salmon) drop-shadow(0 2px 2px maroon);
+  color: rgba(255, 255, 224, 0.701);
+  mix-blend-mode:luminosity;
+  /* background-color: white; */
+  background-clip: border-box;
+  background-attachment: fixed;
+  /* background-image: linear-gradient(0deg, brown 0% 10%, rgba(210, 180, 140, 0.299) 50% 40%, rgba(250, 128, 114, 0.108) 90% 1%); */
+  background-image: linear-gradient(210deg, brown, maroon);
 }
 
-div {
+.container {
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
   z-index: -1;
 }
 
-div div{
-  position: relative;
+.image-layer{
+  overflow: hidden;
   width: 100%;
   margin-bottom: -100%;
   aspect-ratio: 1 / 1;
@@ -74,17 +113,23 @@ div div{
   z-index: 0;
 }
 
-div div:hover {
+.image-layer:hover {
   background-color: transparent;
 }
 
 div img {
-  width: 100%;
-  position: relative;
+  transition: width 100ms, margin 100ms;
+  width: 125%;
+  margin: -12.5%;
   z-index: -1;
+  object-fit: cover;
 }
 
-div img:hover {
+.container:hover img {
+  /* animation-name: zoom;
+  animation-duration: 100ms; */
+  width: 100%;
+  margin: 0%;
 }
 
 ul ol,
@@ -99,7 +144,7 @@ ul ul {
 }
 
 li {
-  font-size: 300%;
+  font-size: 4vh;
   text-align: left;
   border: none;
   box-shadow: none;
@@ -108,11 +153,11 @@ li {
 }
 
 li li {
-  font-size: 70%;
+  font-size: 3vh;
 }
 
 p {
-  font-size: 300%;
+  font-size: 4vh;
 }
 
 a {
